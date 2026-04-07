@@ -10,7 +10,7 @@ description: "統一 TTS（文字轉語音），支援 Gemini TTS、MiMo TTS 與
 | 提供者 | 方式 | 適合場景 |
 |--------|------|----------|
 | **microsoft** | OpenClaw 內建 `tts` tool | 最方便，不需設定，快速朗讀 |
-| **gemini** | script (`scripts/tts.py`) | 30 種聲音，英文為主 |
+| **gemini** | script (`scripts/tts.py`) | 14 種已驗證女聲 + 12 種男聲/中性（未測試） |
 | **mimo** | script (`scripts/tts.py`) | 中文自然，支援風格控制 |
 
 ## Microsoft TTS（內建，最簡單）
@@ -66,7 +66,7 @@ python3 skills/tts-studio/scripts/tts.py @article.txt -o article.mp3
 
 ### 聲音選擇
 
-**Gemini TTS（30 種）**：`Zephyr`（女/溫柔）、`Puck`（男/活潑）、`Charon`（男/沉穩）、`Kore`（女/專業）、`Fenrir`（男/低沉）... 完整列表見 README.md
+**Gemini TTS**：`Zephyr`（女/溫柔）、`Puck`（男/活潑）、`Charon`（男/沉穩）、`Fenrir`（男/低沉）... 14 種已驗證女聲，完整列表見 README.md
 
 **MiMo TTS**：`default_zh`（中文女聲）、`default_en`（英文女聲）
 - 風格：`newscast`（新聞）、`chat`（聊天）、`story`（故事）、`poem`（詩歌）

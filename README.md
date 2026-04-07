@@ -87,40 +87,54 @@ python3 scripts/tts.py "測試" --output /tmp/test.mp3
 
 ## 聲音列表
 
-### Gemini TTS 聲音（30 種）
+### Gemini TTS 聲音
 
-| 聲音 | 性別 | 適合場景 |
+> ⚠️ 並非所有列舉聲音都支援 TTS。以下標記 ✅ 為已驗證可用，❌ 為回傳 400 不可用，未測試的聲音請自行測試。
+
+#### 女聲（已驗證 14 種可用）
+
+| 聲音 | 狀態 | 適合場景 |
 |------|------|----------|
-| **Zephyr** | 女 | 通用、溫柔（預設） |
-| **Puck** | 男 | 活潑、年輕 |
-| **Charon** | 男 | 沉穩、敘事 |
-| **Kore** | 女 | 專業、新聞 |
-| **Fenrir** | 男 | 低沉、有力 |
-| **Aoede** | 女 | 清亮、友善 |
-| **Despina** | 女 | 柔和、舒適 |
-| **Erinome** | 女 | 英式口音 |
-| **Iapetus** | 男 | 中性、清晰 |
-| **Enceladus** | 男 | 年輕、自然 |
-| **Algenib** | 男 | 深沉 |
-| **Algieba** | 女 | 優雅 |
-| **Achernar** | 女 | 明亮 |
-| **Achird** | 男 | 溫和 |
-| **Alnilam** | 女 | 清晰 |
-| **Autonoe** | 女 | 自然 |
-| **Callirrhoe** | 女 | 柔美 |
-| **Gacrux** | 女 | 成熟 |
-| **Laomedeia** | 女 | 英式 |
-| **Leda** | 女 | 溫暖 |
-| **Orus** | 男 | 穩重 |
-| **Pulcherrima** | 女 | 精緻 |
-| **Rasalgethi** | 男 | 多變 |
-| **Sadachbia** | 女 | 輕快 |
-| **Sadaltager** | 男 | 可靠 |
-| **Schedar** | 女 | 自信 |
-| **Sulafar** | 男 | 專業 |
-| **Umbriel** | 男 | 低調 |
-| **Vindemiatrix** | 女 | 悠閒 |
-| **Zubenelgenubi** | 中性 | 中性 |
+| **Zephyr** | ✅ | 通用、溫柔（預設） |
+| **Aoede** | ✅ | 清亮、友善 |
+| **Despina** | ✅ | 柔和、舒適 |
+| **Erinome** | ✅ | 英式口音 |
+| **Algieba** | ✅ | 優雅 |
+| **Alnilam** | ✅ | 清晰 |
+| **Autonoe** | ✅ | 自然 |
+| **Callirrhoe** | ✅ | 柔美 |
+| **Gacrux** | ✅ | 成熟 |
+| **Laomedeia** | ✅ | 英式 |
+| **Leda** | ✅ | 溫暖 |
+| **Pulcherrima** | ✅ | 精緻 |
+| **Sadachbia** | ✅ | 輕快 |
+| **Vindemiatrix** | ✅ | 悠閒 |
+| Kore | ❌ | 回傳 400，不支援 TTS |
+| Achernar | ❌ | 回傳 400，不支援 TTS |
+| Schedar | ❌ | 回傳 400，不支援 TTS |
+
+#### 男聲（未測試）
+
+| 聲音 | 適合場景 |
+|------|----------|
+| **Puck** | 活潑、年輕 |
+| **Charon** | 沉穩、敘事 |
+| **Fenrir** | 低沉、有力 |
+| **Iapetus** | 中性、清晰 |
+| **Enceladus** | 年輕、自然 |
+| **Algenib** | 深沉 |
+| **Achird** | 溫和 |
+| **Orus** | 穩重 |
+| **Rasalgethi** | 多變 |
+| **Sadaltager** | 可靠 |
+| **Sulafar** | 專業 |
+| **Umbriel** | 低調 |
+
+#### 中性（未測試）
+
+| 聲音 | 適合場景 |
+|------|----------|
+| **Zubenelgenubi** | 中性 |
 
 ### MiMo TTS 聲音
 
