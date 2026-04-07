@@ -265,7 +265,10 @@ def main():
         sys.exit(1)
 
     if args.voice is None:
-        args.voice = "Zephyr" if args.provider == "gemini" else "default_zh"
+        if args.provider == "gemini":
+            args.voice = os.environ.get("GEMINI_TTS_VOICE", "Zephyr")
+        else:
+            args.voice = "default_zh"
 
     if not args.output:
         os.makedirs(DEFAULT_OUTPUT_DIR, exist_ok=True)
